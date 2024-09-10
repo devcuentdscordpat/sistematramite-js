@@ -1,0 +1,19 @@
+{
+  "name": "sistematramite",
+  "version": "1.0.0",
+  "description": "Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.20.0",
+    "mysql2": "^3.11.1",
+    "nodemon": "^3.1.4"
+  }
+}

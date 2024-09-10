@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO | ADMIN</title>
+    <link rel="stylesheet" href="/styles.css"> 
+
+</head>
+<body>
+    <%- include('../shared/side-bar/side-bar.ejs', 
+        { sidebar_items: [
+            { item_name: 'Inicio', path: '/admin/inicio' },
+            { item_name: 'Gestor de Tramites', path: '/admin/inicio' },
+            { item_name: 'Gestor de Revisiones', path: '/admin/inicio' },
+            { item_name: 'Reportes', path: '/admin/inicio' }
+        ]
+    }) %> 
+    <div class="main-content">
+        <% if (nombreVista !== "") { %>
+            <%- include(nombreVista) %>
+        <% } else { %>
+            <p> </p>
+        <% } %>
+    </div>
+</body>
+</html>
